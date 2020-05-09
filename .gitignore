@@ -6,6 +6,22 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
+# Project dependencies
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+.cache
+node_modules
+yarn-error.log
+
+# Build directory
+/public
+
+# macOS
+.DS_Store
+
+# deployment-specific configs
+now.json
+
+
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
@@ -102,3 +118,5 @@ dist
 
 # TernJS port file
 .tern-port
+.idea/
+.vscode
