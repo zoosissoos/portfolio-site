@@ -1,14 +1,12 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import FluidLogo from "../images/FluidImages/FluidLogo";
 
 const Hero = () => {
   return (
-    <section className="text-center">
-      <FluidLogo />
-      <h2 className="inline-block p-3 mb-4 text-2xl font-bold bg-yellow-400">
-        Hey there! Welcome to your first Gatsby site.
-      </h2>
+    <section className="flex-row justify-center text-center bg-black py-4 xl:px-16 min-h-screen">
+      <div className="w-6/6 m-auto sm:w-3/6">
+        <FluidLogo/>
+      </div>
     </section>
   );
 };
