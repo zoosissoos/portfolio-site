@@ -8,7 +8,10 @@ module.exports = {
       colors: {
         'brand-gold': '#D3A95E',
       }
-    }
+    },
+    container: {
+      padding: '2rem',
+    },
   },
   variants: {},
   // https://github.com/tailwindcss/custom-forms

@@ -1,6 +1,6 @@
 import React from 'react';
 import Typist from "react-typist";
-import FluidLogo from "../images/FluidImages/FluidLogo";
+import FluidLogo from "../../images/FluidImages/FluidLogo";
 
 
 const Hero = () => {
