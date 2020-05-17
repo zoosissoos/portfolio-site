@@ -11,8 +11,12 @@ const Technologies = () => {
     "Redux Saga",
     "MongoDB",
     "Gatsby",
+    "GraphQL",
     "Node",
     "Express",
+    "Git",
+    "Github",
+    "Bitbucket",
     "AWS CloudFront",
     "AWS Amplify",
     "AWS Lambda",
@@ -21,7 +25,7 @@ const Technologies = () => {
     "AWS EC2",
     "AWS CloudWatch",
     "Bootstrap",
-    "Tailwind",
+    "Tailwind"
   ]
 
   const rows = [...Array( Math.ceil(techList.length / 4) )];
@@ -36,7 +40,7 @@ const Technologies = () => {
 
   return (
     <section className="flex flex-col bg-gray-300 p-8 md:p-16">
-      <h1>Familiar Techs: </h1>
+      <h1 className="mb-2">Familiar Techs and Tooling: </h1>
       { content }
     </section>
   );
