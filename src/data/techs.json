@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Javascript"
+  },
+  {
+    "name": "React"
+  },
+  {
+    "name": "Redux"
+  },
+  {
+    "name": "Redux Saga"
+  },
+  {
+    "name": "MongoDB"
+  },
+  {
+    "name": "Gatsby"
+  },
+  {
+    "name": "GraphQL"
+  },
+  {
+    "name": "Node"
+  },
+  {
+    "name": "Git"
+  },
+  {
+    "name": "Github"
+  },
+  {
+    "name": "Bitbucket"
+  },
+  {
+    "name": "AWS CloudFront"
+  },
+  {
+    "name": "AWS Amplify"
+  },
+  {
+    "name": "AWS Lambda"
+  },
+  {
+    "name": "AWS CloudFormation"
+  },
+  {
+    "name": "AWS S3"
+  },
+  {
+    "name": "AWS EC2"
+  },
+  {
+    "name": "AWS CloudWatch"
+  },
+  {
+    "name": "AWS S3"
+  },
+  {
+    "name": "Bootstrap"
+  },
+  {
+    "name": "Tailwind"
+  }
+]

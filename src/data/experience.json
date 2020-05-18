@@ -4,20 +4,32 @@
     "id":"WW",
     "link": "https://www.workwave.com/",
     "description": "Field Service Software",
-    "background": "Junior Web Developer"
+    "background": "Junior Web Developer",
+    "img": {
+      "src": "../images/experiences/workwave.png",
+      "alt": "workwave logo"
+    }
   },
   {
     "name": "SkuNexus",
     "id": "SN",
     "link": "https://www.skunexus.com/",
     "description": "Order Management Software",
-    "background": "Junior Front End Developer"
+    "background": "Junior Front End Developer",
+    "img": {
+      "src": "../images/experiences/skunexus.png",
+      "alt": "skunexus logo"
+    }
   },
   {
     "name": "Apex United",
     "id":"AU",
     "link": "https://www.apexunitedcorp.com/",
     "description": "Business & Support Solutions",
-    "background": "Web Developer"
+    "background": "Web Developer",
+    "img": {
+      "src": "../images/experiences/apex.png",
+      "alt": "apex logo"
+    }
   }
 ]
