@@ -8,7 +8,11 @@ module.exports = {
     title: `DBL Web Development`,
     description: `Daniel Brian Lewis Web Development`,
     author: `@daniellewis`,
-    tags: ["portfolio", "web developer", "developer", "responsive websites"]
+    tags: ["portfolio", "web developer", "developer", "responsive websites"],
+    gitHubLink: "https://github.com/zoosissoos",
+    linkedInLink: "https://www.linkedin.com/in/danielbrianlewis/",
+    emailAddress: "danielbrianlewis@gmail.com",
+    resumeLink: "https://docs.google.com/document/d/1HIkkh0lenuQCuJ6y68oUjk9zSSeb0WANjV1cLaORtFk/edit?usp=sharing"
   },
   plugins: [
     `gatsby-plugin-eslint`,

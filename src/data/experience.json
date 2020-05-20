@@ -7,7 +7,8 @@
     "background": "Junior Web Developer",
     "img": {
       "src": "../images/experiences/workwave.png",
-      "alt": "workwave logo"
+      "alt": "workwave logo",
+      "rounded": false
     }
   },
   {
@@ -18,7 +19,8 @@
     "background": "Junior Front End Developer",
     "img": {
       "src": "../images/experiences/skunexus.png",
-      "alt": "skunexus logo"
+      "alt": "skunexus logo",
+      "rounded": true
     }
   },
   {
@@ -29,7 +31,8 @@
     "background": "Web Developer",
     "img": {
       "src": "../images/experiences/apex.png",
-      "alt": "apex logo"
+      "alt": "apex logo",
+      "rounded": true
     }
   }
 ]

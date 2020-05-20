@@ -1,8 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 import {ParallaxProvider} from "react-scroll-parallax/cjs";
-import FooterBar from './footerBar';
-
+import Contact from '../sections/contact';
 
 function Layout({children}) {
   return (
@@ -12,9 +11,8 @@ function Layout({children}) {
         <main className="flex-1 w-full">
           {children}
         </main>
-
-        <FooterBar />
       </ParallaxProvider>
+      <Contact />
     </div>
   );
 }
