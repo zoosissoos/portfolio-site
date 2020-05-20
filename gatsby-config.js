@@ -4,6 +4,7 @@ const tailwindConfig = require("./tailwind.config.js");
 const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
+  pathPrefix: "/portfolio-site",
   siteMetadata: {
     title: `DBL Web Development`,
     description: `Daniel Brian Lewis Web Development`,

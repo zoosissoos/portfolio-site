@@ -42,6 +42,7 @@
     "fix": "npm run fix:lint && npm run fix:prettier",
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "dev": "npm run develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -58,6 +59,7 @@
     "eslint-plugin-import": "2.20.2",
     "eslint-plugin-react": "7.19.0",
     "gatsby-plugin-eslint": "2.0.8",
+    "gh-pages": "^2.2.0",
     "prettier": "2.0.5",
     "tailwindcss": "1.4.5"
   },
