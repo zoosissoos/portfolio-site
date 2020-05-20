@@ -1,31 +1,23 @@
 import React from "react";
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import FluidLogo from '../images/FluidImages/FluidLogo'
+import Layout from "../components/sections/layout";
+import SEO from "../components/sections/seo";
+import Hero from "../components/sections/hero";
+import About from "../components/sections/about";
+import Technologies from "../components/sections/technologies";
+import Experiences from "../components/sections/experiences";
 
 function IndexPage() {
   return (
     <Layout>
       <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        keywords={[`web developer`, `websites`, `web apps`, `responsive websites`, `react developer`]}
         title="Welcome"
       />
-
-      <section className="text-center">
-        <p className="leading-loose">
-          This is a barebones starter for Gatsby styled using{` `}
-          <a
-            className="font-bold text-gray-900 no-underline"
-            href="https://tailwindcss.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Tailwind CSS
-          </a>
-          , a utility-first CSS framework.
-        </p>
-      </section>
+      <Hero />
+      <About />
+      <Experiences />
+      <Technologies />
     </Layout>
   );
 }
