@@ -1,5 +1,5 @@
 import React from 'react';
-import GatsbyImage from "gatsby-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { graphql, useStaticQuery } from "gatsby";
 import SectionHeading from "../headings/sectionHeading";
 
@@ -22,9 +22,7 @@ const Experiences = () => {
                         rounded
                         src {
                             childImageSharp {
-                                fixed(width: 100, height: 100) {
-                                    ...GatsbyImageSharpFixed_withWebp
-                                }
+                              gatsbyImageData(layout: FIXED width: 100 height: 100)
                             }
                         }
                     }
@@ -32,7 +30,6 @@ const Experiences = () => {
           }
       }
   `);
-  console.log(allExperienceJson)
 
   return (
     <section className="flex flex-col bg-gray-500 p-8 md:p-16">
@@ -40,6 +37,7 @@ const Experiences = () => {
       <div className="sm:container flex flex-col">
         {
           allExperienceJson.nodes.map(({name, id, link, description, background, img}, index) => {
+            const image = getImage(img.src.childImageSharp)
             return (
               <div className="flex w-full sm:flex-row flex-col border-solid border-4 border-gray-600 bg-gray-300 rounded-md p-4 shadow-lg mb-3" key={`${index}-${id}`}>
                 <div className="flex w-full mb-3 sm:w-1/4 sm:mb-0 justify-center content-center">
@@ -51,7 +49,7 @@ const Experiences = () => {
                   >
                     <GatsbyImage
                       className={`w-full h-full ${img.rounded && "rounded-full"}`}
-                      {...img.src.childImageSharp}
+                      image={image}
                       alt={img.alt}
                     />
                   </a>

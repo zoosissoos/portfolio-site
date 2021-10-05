@@ -1,5 +1,17 @@
 [
   {
+    "name": "MediFind",
+    "id":"MF",
+    "link": "https://www.medifind.com/",
+    "description": "Digital Health Platform",
+    "background": "Software Engineer",
+    "img": {
+      "src": "../images/experiences/medifind.png",
+      "alt": "apex logo",
+      "rounded": true
+    }
+  },
+  {
     "name": "WorkWave",
     "id":"WW",
     "link": "https://www.workwave.com/",

@@ -1,7 +1,7 @@
-const resolveConfig = require("tailwindcss/resolveConfig");
-const tailwindConfig = require("./tailwind.config.js");
-
-const fullConfig = resolveConfig(tailwindConfig);
+// const resolveConfig = require("tailwindcss/resolveConfig");
+// const tailwindConfig = require("./tailwind.config.js");
+//
+// const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
 
@@ -23,8 +23,8 @@ module.exports = {
       options: {
         name: `portfolio-site`,
         start_url: `/`,
-        background_color: fullConfig.theme.colors.white,
-        theme_color: fullConfig.theme.colors.teal["400"],
+        // background_color: fullConfig.theme.colors.white,
+        // theme_color: fullConfig.theme.colors.teal["400"],
         display: `minimal-ui`,
         icon: `src/images/favicons/favicon-32x32.png`,
       },
@@ -57,7 +57,7 @@ module.exports = {
       resolve: `gatsby-plugin-postcss`,
       options: {
         postCssPlugins: [
-          require(`tailwindcss`)(tailwindConfig),
+          require('tailwindcss')('./tailwind.config.js'),
           require(`autoprefixer`),
           ...(process.env.NODE_ENV === `production`
             ? [require(`cssnano`)]
@@ -66,5 +66,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    `gatsby-plugin-image`,
   ],
 };

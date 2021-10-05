@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
+import {graphql, useStaticQuery} from "gatsby";
 import IconHappy from "../../images/icons/iconHappy";
 import IconSmile from "../../images/icons/iconSmile";
 import IconGithub from "../../images/icons/iconGithub";
 import IconLinkedin from "../../images/icons/iconLinkedin";
 import IconGoogleDrive from "../../images/icons/iconGoogleDrive";
 import IconGoogleGmail from "../../images/icons/iconGoogleGmail";
-import {graphql, useStaticQuery} from "gatsby";
-
+import useKeypress from "../../hooks/useKeypress";
 
 const Contact = () => {
   const {site} = useStaticQuery(graphql`
@@ -24,6 +24,10 @@ const Contact = () => {
 
   const [open, setIsOpen] = useState(false);
 
+  useKeypress('Escape', () => {
+    setIsOpen(false)
+  });
+
   return (
     <>
       {
@@ -31,7 +35,7 @@ const Contact = () => {
         open && (
           <div className="fixed bottom-0 right-0 w-full h-screen flex">
             <div className="flex flex-col sm:flex-row m-auto w-2/4 bg-gray-200 p-2 rounded-md">
-              <div className="flex sm:flex-col flex-row sm:w-1/4 w-full justify-center items-center p-2">
+              <div className="flex sm:flex-col flex-row sm:w-1/4 w-full justify-center items-center p-2 hover:bg-gray-400 rounded-md">
                 <a target="_blank" rel="noopener noreferrer" href={site.siteMetadata.gitHubLink}
                    className="w-2/4 h-auto">
                   <IconGithub/>
@@ -40,7 +44,7 @@ const Contact = () => {
                   <p>GitHub</p>
                 </div>
               </div>
-              <div className="flex sm:flex-col flex-row sm:w-1/4 w-full justify-center items-center p-2">
+              <div className="flex sm:flex-col flex-row sm:w-1/4 w-full justify-center items-center p-2 hover:bg-gray-400 rounded-md">
                 <a target="_blank" rel="noopener noreferrer" href={site.siteMetadata.linkedInLink}
                    className="w-2/4 h-auto">
                   <IconLinkedin/>
@@ -49,7 +53,7 @@ const Contact = () => {
                   <p>LinkedIn</p>
                 </div>
               </div>
-              <div className="flex sm:flex-col flex-row sm:w-1/4 w-full justify-center items-center p-2">
+              <div className="flex sm:flex-col flex-row sm:w-1/4 w-full justify-center items-center p-2 hover:bg-gray-400 rounded-md">
                 <a target="_blank" rel="noopener noreferrer" href={site.siteMetadata.resumeLink}
                    className="w-2/4 h-auto">
                   <IconGoogleDrive/>
@@ -58,7 +62,7 @@ const Contact = () => {
                   <p>Resume</p>
                 </div>
               </div>
-              <div className="flex sm:flex-col flex-row sm:w-1/4 w-full justify-center items-center p-2">
+              <div className="flex sm:flex-col flex-row sm:w-1/4 w-full justify-center items-center p-2 hover:bg-gray-400 rounded-md">
                 <a target="_blank" rel="noopener noreferrer" href={`mailto:${site.siteMetadata.emailAddress}`}
                    className="w-2/4 h-auto">
                   <IconGoogleGmail/>
