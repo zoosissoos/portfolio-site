@@ -11,7 +11,7 @@ function IndexPage() {
   return (
     <Layout>
       <SEO
-        keywords={[`web developer`, `websites`, `web apps`, `responsive websites`, `react developer`]}
+        keywords={[`web developer`, `websites`, `web apps`, `responsive websites`, `react developer`, `javascript developer`, `software engineer`]}
         title="Welcome"
       />
       <Hero />
