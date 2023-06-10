@@ -4,7 +4,7 @@
   "version": "4.0.0",
   "author": "Daniel Lewis",
   "dependencies": {
-    "gatsby": "^3.13.1",
+    "gatsby": "^4.25.7",
     "gatsby-link": "^3.13.0",
     "gatsby-plugin-image": "^1.14.0",
     "gatsby-plugin-manifest": "^3.13.0",
